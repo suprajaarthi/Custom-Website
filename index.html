@@ -1,0 +1,34 @@
+
+<link rel="stylesheet" href="style.css">
+<script async
+  src="https://cse.google.com/cse.js?cx=000888210889775888983:y9tkcjel090"></script>
+<div class="gcse-searchbox"></div>
+<div class="gcse-searchresults"></div>
+
+<script>
+const mySearchStartingCallback = (gname, query) => {
+  const dayOfWeek = new Date().getDay();
+  console.log(dayOfWeek);
+  var days = {
+        "0": "Sunday",
+        "1": "Monday",
+        "2": "Tuesday",
+        "3": "Wednesday",
+        "4": "Thursday",
+        "5": "Friday",
+        "6": "Saturday"
+    };
+
+    return query + ' ' + days[dayOfWeek];
+};
+// Install the callback.
+window.__gcse || (window.__gcse = {});
+  window.__gcse.searchCallbacks = {
+    image: {
+      starting: mySearchStartingCallback,
+    },
+    web: {
+      starting: mySearchStartingCallback,
+    },
+};
+</script>

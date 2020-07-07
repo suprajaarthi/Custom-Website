@@ -1,0 +1,13 @@
+body {
+ background-image: url("bg1.jpg");
+ background-color: #cccccc;
+
+ 
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+ background-size: cover;
+ background-position: center; /* Center the image */
+ background-repeat: no-repeat; /* Do not repeat the image */
+}
+
